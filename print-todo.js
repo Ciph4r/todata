@@ -1,7 +1,14 @@
 const printTodo = function(todo) {
+
+
+
+
+
+
   // Use `document.createElement` to make an <li>
   const li = document.createElement('li');
-  li.innerText = todo.text;
+  !priovalue ? li.innerText = todo.text :
+  li.innerText = todo.text + ' - ' + todo.priority
 
   // Query the ul and put it in a variable.
   const ul = document.querySelector('.todo-list');

@@ -72,18 +72,18 @@ if (typeof priority2First === 'undefined') {
   priority2First = undefined;
 }
 
-module.exports = {
-  getTodoName,
-  getCompleteness,
-  getPriority,
-  isComplete,
-  isHighPriority,
-  names,
-  namesAndPriorities,
-  justNotComplete,
-  justComplete,
-  priority2Only,
-  priority1Only,
-  notCompleteFirst,
-  priority2First,
-}
+// module.exports = {
+//   getTodoName,
+//   getCompleteness,
+//   getPriority,
+//   isComplete,
+//   isHighPriority,
+//   names,
+//   namesAndPriorities,
+//   justNotComplete,
+//   justComplete,
+//   priority2Only,
+//   priority1Only,
+//   notCompleteFirst,
+//   priority2First,
+// }

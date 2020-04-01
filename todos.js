@@ -2,7 +2,7 @@ const todos = [
   {
     text: 'Christmas shopping',
     id: 0,
-    complete: false,
+    complete: true,
     priority: 1,
   },
   {
@@ -38,7 +38,6 @@ const todos = [
   
 ]
 
-let currentTodos = todos.slice();
+let currentTodos = completevalue ? todos.slice() : justNotComplete(todos.slice())
 
 
-module.exports = todos;
