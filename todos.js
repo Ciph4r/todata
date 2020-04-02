@@ -38,6 +38,6 @@ const todos = [
   
 ]
 
-let currentTodos = completevalue ? todos.slice() : justNotComplete(todos.slice())
 
+let currentTodos = [...todos]
 
