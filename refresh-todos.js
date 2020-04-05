@@ -2,23 +2,24 @@
 
 const refreshTodos = function() {
 clearTodos();
+let i = 0
 
+while (i < listCount){
+  
 if (!highLow && !completevalue){
-printTodos((priority2Only(justNotComplete(currentTodos))))
+printTodos((priority2Only(justNotComplete(currentTodos[i]))),i)
 
 } else if (highLow && !completevalue){
-printTodos((justNotComplete(currentTodos)))
+printTodos((justNotComplete(currentTodos[i])),i)
 
 } else if (!highLow && completevalue){
-  printTodos((priority2Only(currentTodos)))
+  printTodos((priority2Only(currentTodos[i])), i)
 
 } else {
-  printTodos(currentTodos)
+  printTodos(currentTodos[i], i)
 }
-
-
-
-  // printTodos(currentTodos);
+i++
+}
 }
 
 // completevalue ? printTodos(currentTodos) : printTodos(justNotComplete(currentTodos))

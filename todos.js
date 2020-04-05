@@ -1,4 +1,4 @@
-const todos = [
+const todos = [[
   {
     text: 'Christmas shopping',
     id: 0,
@@ -35,7 +35,7 @@ const todos = [
     complete: true,
     priority: 1,
   },
-  
+]
 ]
 
 

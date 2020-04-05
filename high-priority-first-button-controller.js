@@ -7,7 +7,12 @@ const sortByNumber = (array) =>{
 
 
 const highprio = () => {
-    sortByNumber(currentTodos)
+    let i = 0
+
+while (i < listCount){
+    sortByNumber(currentTodos[i])
+    i++
+}
     refreshTodos()
 }
 

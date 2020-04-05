@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+    
     <div class="app">
-      <h1>Todo</h1>
-        <section>
+      
+      <section class = 'top-area'>
+
+        <section class ='input-area-1'>
+          <section class = 'mini'>
           <label for="todo-input">Add to your todo list!</label>
           <input class="todo-input "type="text" name="todo-input">
           <label for="priority">Priority:</label>
@@ -19,14 +23,29 @@
           </select>
           <button class="add-todo">ADD</button>
         </section>
-        <section>
+        </section>
+
+        <section class = 'input-area2'>
+          <label for="new-list">Create New List</label>
+          <input class="new-list "type="text" name="new-list">
+          <button class="add-new-list">CREATE</button>
+        </section>
+        
+        <section class = "buttons">
           <button class="toggle-priorities">Show Priorities</button>
           <button class="hide-complete">Hide Complete</button>
           <button class="hide-low-priority">Hide Low Priority</button>
           <button class="high-priority-first">High Priority First</button>
           <button class="complete-last">Complete Last</button>
         </section>
-      <ol class="todo-list"></ol>
+      </section>
+
+      <section class = 'list-container'>
+        <section class = 'lists'>
+        <h1> Your Default List</h1>
+        <ol class="todo-list0"></ol>
+      </section>
+      </section>
     </div>
     <script src="./main.js"></script>
     <script src="./back-end.js"></script>
@@ -43,5 +62,6 @@
     <script src="./hide-low-priority-button-controller.js"></script>
     <script src="./high-priority-first-button-controller.js"></script>
     <script src="./complete-last-button-controller.js"></script>
+    <script src="./new-list.js"></script>
   </body>
 </html>

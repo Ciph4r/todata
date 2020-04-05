@@ -3,7 +3,12 @@ const truesFirst = (array)=>{
   }
 
 const completeLst = () => {
-    truesFirst(currentTodos)
+  let i = 0
+
+while (i < listCount){
+    truesFirst(currentTodos[i])
+    i++
+  }
     refreshTodos()
 }
 

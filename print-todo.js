@@ -1,4 +1,5 @@
-const printTodo = function(todo) {
+const printTodo = function(todo , num = 0) {
+  
 
   // Use `document.createElement` to make an <li>
   const li = document.createElement('li');
@@ -6,7 +7,7 @@ const printTodo = function(todo) {
   li.innerText = `${todo.text}  -  ${todo.priority === 1 ? 'Low' : 'High'}`
 
   // Query the ul and put it in a variable.
-  const ul = document.querySelector('.todo-list');
+  const ul = document.querySelector(`.todo-list${num}`);
 
   // Append the li we made to the ul as the last child.
   ul.appendChild(li);
@@ -26,9 +27,11 @@ const printTodo = function(todo) {
   li.addEventListener('click', function(event) {
     const x = Number(event.target.id)
     // const x = currentTodos.filter(x => x.id === Number(event.target.id))
-    
-    event.target.classList.toggle('complete')
-    currentTodos.map(obj => {if (obj.id === x) obj.complete = obj.complete ? false : true})
+    console.log('gg')
+    // event.target.classList.toggle('complete')
+    for (let i = 0 ; i < currentTodos.length ; i++){
+    currentTodos[i].map(obj => {if (obj.id === x) obj.complete = obj.complete ? false : true})
+    }
     refreshTodos()
     // TODO: find the correct todo in your data to toggle the completeness of!
     
