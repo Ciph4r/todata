@@ -3,6 +3,7 @@ let completevalue = true
 let highLow = true
 let listCount = 1
 let arraycount = 0
+let singleList = false
 
 const arrayLength = () => {
     let arrayNum = 0

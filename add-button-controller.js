@@ -16,5 +16,8 @@ addTodo(newobj)
 refreshTodos()
 todoText.value=''
     }
+    const header = document.querySelector('.h1-1').innerText = 'My List'
+    
+     
 }
 const addButton = document.querySelector('.add-todo').addEventListener('click',newitem)
