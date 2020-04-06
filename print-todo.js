@@ -1,6 +1,6 @@
 const printTodo = function(todo , num = 0) {
   
-
+ 
   // Use `document.createElement` to make an <li>
   const li = document.createElement('li');
   !priovalue ? li.innerText = todo.text :
@@ -26,13 +26,17 @@ const printTodo = function(todo , num = 0) {
 
   li.addEventListener('click', function(event) {
     const x = Number(event.target.id)
-    // const x = currentTodos.filter(x => x.id === Number(event.target.id))
-    console.log('gg')
-    // event.target.classList.toggle('complete')
+    // const y = event.target.parentNode.className[event.target.parentNode.className.length-1]
+   
+   
+
     for (let i = 0 ; i < currentTodos.length ; i++){
-    currentTodos[i].map(obj => {if (obj.id === x) obj.complete = obj.complete ? false : true})
+    currentTodos[i].map(obj => {if (obj.id === x) {
+      obj.complete = obj.complete ? false : true
+      singleList ? (clearTodos(), printTodos(currentTodos[i])): refreshTodos()}
+    })
     }
-    refreshTodos()
+
     // TODO: find the correct todo in your data to toggle the completeness of!
     
   })
